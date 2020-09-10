@@ -1,0 +1,9 @@
+<%= form_for([@todo_list, @todo_list.todo_items.build]) do |f| %>
+
+ <%= f.text_field :content, placeholder: "New Todo" %>
+ <%= f.date_field :due_date, placeholder: "Enter somethign" %>
+ <%= f.number_field :priority, placeholder: "1-5 please" %>
+
+ <%= f.submit %>
+
+<% end %>
